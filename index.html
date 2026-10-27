@@ -33,7 +33,7 @@ mark{background:linear-gradient(transparent 50%,var(--hl) 50%);color:inherit;pad
 .intro{display:grid;gap:22px;align-content:start}
 h1{font-family:var(--display);color:var(--ink);font-size:clamp(42px,5vw,64px);font-weight:800;line-height:1;letter-spacing:-.025em;margin:0}
 .intro .say{font-size:clamp(17px,1.6vw,19.5px);line-height:1.5;max-width:36em;color:var(--ink)}
-.intro .say + .say{color:var(--muted)}
+.intro .say + .say{color:var(--muted);font-size:clamp(16px,1.4vw,17.5px)}
 .reach{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;font-weight:500}
 .copy{font:inherit;font-weight:500;background:none;border:0;padding:0;color:var(--ink);cursor:pointer;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 .copy:hover{text-decoration-thickness:2px}
@@ -116,6 +116,7 @@ dialog button{font:inherit;font-weight:500;color:#fff;background:none;border:0;c
   <header class="intro">
       <h1>Nithin Murugan</h1>
       <p class="say">I build multimodal AI, in vision and voice, that holds up outside the lab: on a phone at a cricket ground, across a school's camera network, inside a dentist's 20-year-old software.</p>
+      <p class="say">Most recently I was a field AI engineer at Relai, an AI reliability company, building continual-learning pipelines that keep agents improving across deployments instead of regressing. Robot policy evaluation asks the same question.</p>
       <p class="say">I'm looking for an in-person founding role in San Francisco, in vision or physical AI.</p>
       <div class="reach">
         <button class="copy" type="button" data-copy="nithin.murugan10@gmail.com">Copy my email</button>
@@ -208,7 +209,6 @@ dialog button{font:inherit;font-weight:500;color:#fff;background:none;border:0;c
         <li><b>Perception that holds up in messy places.</b> Weapon detection on school CCTV with under 1% false positives, a cricket ball tracked outdoors from a handheld phone, VLM reasoning over shaky first-person video.</li>
         <li><b>Real-time inference on the device.</b> 30+ FPS detection and trajectory prediction in C++ and OpenCV on ONNX and TFLite, running on a phone.</li>
         <li><b>Many sensors, one picture.</b> 3D-calibrated tracking across 25+ cameras at DefenX, so one person stays one track across a building.</li>
-        <li><b>Systems that should get better, not regress.</b> At Relai I built continual-learning pipelines that improved how AI agents adapt and retain memory across repeated deployments, the same question robot policy evaluation asks.</li>
         <li><b>Shipping to customers and learning what breaks.</b> Renfort ran on live patient data at 7 practices, and the real problems showed up there, not in the demo.</li>
       </ul>
       <p class="body">I haven't built robot hardware yet, so I'd start contributing on perception, inference and deployment while I learn the rest. I'm looking for an in-person founding role in San Francisco.</p>
