@@ -73,9 +73,12 @@ td.lnk{text-align:right;white-space:nowrap;width:1%;padding-right:0}
 .total{color:var(--muted);font-size:15.5px}
 
 /* close */
-.close{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(20px,3.5vw,48px);border-top:1px solid var(--line);padding-top:clamp(32px,4vw,48px)}
+.close{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,3fr);gap:clamp(20px,3.5vw,48px);border-top:1px solid var(--line);padding-top:clamp(32px,4vw,48px)}
 .close h2{font-size:clamp(26px,3vw,36px)}
-.close .body{color:var(--muted);margin-top:12px}
+.close .body{color:var(--muted);margin-top:18px}
+.bring{gap:12px;font-size:16px;color:var(--body);max-width:40em;margin-top:16px}
+.bring b{color:var(--ink);font-weight:700}
+
 .close .reach{flex-direction:column;align-items:flex-start;gap:8px}
 .mail{user-select:all;word-break:break-all}
 
@@ -200,8 +203,15 @@ dialog button{font:inherit;font-weight:500;color:#fff;background:none;border:0;c
 
   <footer class="close">
     <div>
-      <h2>Robots are next.</h2>
-      <p class="body">I haven't built hardware yet. Every project above also started from zero for me, and each one shipped. I'd like to do that next with a small team in San Francisco, in person.</p>
+      <h2>What I bring to a robotics team</h2>
+      <ul class="facts bring">
+        <li><b>Perception that holds up in messy places.</b> Weapon detection on school CCTV with under 1% false positives, a cricket ball tracked outdoors from a handheld phone, VLM reasoning over shaky first-person video.</li>
+        <li><b>Real-time inference on the device.</b> 30+ FPS detection and trajectory prediction in C++ and OpenCV on ONNX and TFLite, running on a phone.</li>
+        <li><b>Many sensors, one picture.</b> 3D-calibrated tracking across 25+ cameras at DefenX, so one person stays one track across a building.</li>
+        <li><b>Systems that should get better, not regress.</b> At Relai I built continual-learning pipelines that improved how AI agents adapt and retain memory across repeated deployments, the same question robot policy evaluation asks.</li>
+        <li><b>Shipping to customers and learning what breaks.</b> Renfort ran on live patient data at 7 practices, and the real problems showed up there, not in the demo.</li>
+      </ul>
+      <p class="body">I haven't built robot hardware yet, so I'd start contributing on perception, inference and deployment while I learn the rest. I'm looking for an in-person founding role in San Francisco.</p>
     </div>
     <div class="reach">
       <span class="mail">nithin.murugan10@gmail.com</span>
