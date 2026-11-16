@@ -169,7 +169,7 @@ dialog button{font:inherit;font-weight:500;color:#fff;background:none;border:0;c
       <div class="notes">
         <h2 id="h-stump">StumpEye: a $60K broadcast rig, rebuilt as a $500 phone app</h2>
         <p class="who">Founding computer vision engineer, 2023 to 2024</p>
-        <p class="body">Ball detection (YOLOv8, 92%+ mAP) and a Transformer that predicts the trajectory, running on the phone at 30+ FPS in multithreaded C++ and OpenCV.</p>
+        <p class="body">Ball detection (YOLOv8, 92%+ mAP) and a Transformer that predicts the trajectory, running on the phone at 30+ FPS in multithreaded Java and Swift with OpenCV.</p>
         <ul class="facts">
           <li><mark>Won the ICC Global Hackathon</mark> at the 2023 Cricket World Cup, against 22,000+ entries from 119 countries</li>
         </ul>
@@ -205,6 +205,20 @@ dialog button{font:inherit;font-weight:500;color:#fff;background:none;border:0;c
       </div>
     </section>
 
+    <section class="proj" aria-labelledby="h-plug">
+      <div class="frame"><video src="plugsense.mp4" poster="plugsense.jpg" autoplay muted loop playsinline preload="metadata" aria-label="An SO-101 arm plugging a USB-C cable into a power bank, whose display lights up when the plug latches"></video></div>
+      <div class="notes">
+        <h2 id="h-plug">plug-sense: a robot arm that notices a failed plug-in and tries again</h2>
+        <p class="who">Personal project on an SO-101 arm, 2026</p>
+        <p class="body">ACT often reaches a USB-C port without getting the plug to latch, and it has no way of knowing. A camera reads the power bank's display after each attempt. If the plug did not latch, the arm backs out and retries with a motion taught from one demonstration. The ACT weights are not changed.</p>
+        <ul class="facts">
+          <li>Latched <mark>15 of 20</mark> with the retry, against 7 of 20 for ACT alone (hand-counted trials)</li>
+          <li>ACT trained on 50 teleoperated demonstrations I recorded</li>
+        </ul>
+        <div class="acts"><a class="play" href="https://mns1007.github.io/plug-sense/" target="_blank" rel="noopener">Read the write-up</a></div>
+      </div>
+    </section>
+
   </main>
 
   <section class="wins" aria-labelledby="h-wins">
@@ -222,11 +236,11 @@ dialog button{font:inherit;font-weight:500;color:#fff;background:none;border:0;c
       <h2>What I bring to a robotics team</h2>
       <ul class="facts bring">
         <li><b>Perception that holds up in messy places.</b> Weapon detection on school CCTV with under 1% false positives, a cricket ball tracked outdoors from a handheld phone, VLM reasoning over shaky first-person video.</li>
-        <li><b>Real-time inference on the device.</b> 30+ FPS detection and trajectory prediction in C++ and OpenCV on ONNX and TFLite, running on a phone.</li>
+        <li><b>Real-time inference on the device.</b> 30+ FPS detection and trajectory prediction in Java and Swift with OpenCV, on ONNX and TFLite, running on a phone.</li>
         <li><b>Many sensors, one picture.</b> 3D-calibrated tracking across 25+ cameras at DefenX, so one person stays one track across a building.</li>
         <li><b>Shipping to customers and learning what breaks.</b> Renfort ran on live patient data at 7 practices, and the real problems showed up there, which we kinda navigated :)</li>
       </ul>
-      <p class="body">I haven't built robot hardware yet, so I'd start contributing on perception, inference and deployment while I learn the rest. I'm looking for an in-person founding role in San Francisco.</p>
+      <p class="body">I'm early on the robot side: I've trained ACT on my own SO-101 arm and built two small projects on it. I'd start contributing on perception, inference and deployment while I go deeper. I'm looking for an in-person founding role in San Francisco.</p>
     </div>
     <div class="reach">
       <span class="mail">nithin.murugan10@gmail.com</span>
