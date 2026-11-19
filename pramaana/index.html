@@ -148,21 +148,9 @@ dialog button{font:inherit;font-weight:500;color:#fff;background:none;border:0;c
   </div>
 
   <main class="work">
-    <p class="who" style="margin-bottom:-24px">Checking outcomes on a robot arm, then vision on mobile, at scale, and with vision-language models</p>
+    <p class="who" style="margin-bottom:-24px">Before Renfort: vision on mobile and at scale. Then projects.</p>
 
-    <section class="proj" aria-labelledby="h-plug">
-      <div class="frame"><video src="../plugsense.mp4" poster="../plugsense.jpg" autoplay muted loop playsinline preload="metadata" aria-label="An SO-101 arm plugging a USB-C cable into a power bank, whose display lights up when the plug latches"></video></div>
-      <div class="notes">
-        <h2 id="h-plug">plug-sense: a robot arm that notices a failed plug-in and tries again</h2>
-        <p class="who">Personal project on an SO-101 arm, 2026</p>
-        <p class="body">ACT often reaches a USB-C port without getting the plug to latch, and it has no way of knowing. A camera reads the power bank's display after each attempt. If the plug did not latch, the arm backs out and retries with a motion taught from one demonstration. The ACT weights are not changed.</p>
-        <ul class="facts">
-          <li>Latched <mark>15 of 20</mark> with the retry, against 7 of 20 for ACT alone (hand-counted trials)</li>
-          <li>ACT trained on 50 teleoperated demonstrations I recorded</li>
-        </ul>
-        <div class="acts"><a class="play" href="https://mns1007.github.io/plug-sense/" target="_blank" rel="noopener">Read the write-up</a></div>
-      </div>
-    </section>
+    
 
 
     <section class="proj" aria-labelledby="h-stump">
@@ -191,6 +179,20 @@ dialog button{font:inherit;font-weight:500;color:#fff;background:none;border:0;c
           <li>Deployed in active school environments</li>
         </ul>
         <div class="acts" data-demo="defenx" data-len="1:41"></div>
+      </div>
+    </section>
+
+    <section class="proj" aria-labelledby="h-plug">
+      <div class="frame"><video src="../plugsense.mp4" poster="../plugsense.jpg" autoplay muted loop playsinline preload="metadata" aria-label="An SO-101 arm plugging a USB-C cable into a power bank, whose display lights up when the plug latches"></video></div>
+      <div class="notes">
+        <h2 id="h-plug">plug-sense: a robot arm that notices a failed plug-in and tries again</h2>
+        <p class="who">Personal project on an SO-101 arm, 2026</p>
+        <p class="body">ACT often reaches a USB-C port without getting the plug to latch, and it has no way of knowing. A camera reads the power bank's display after each attempt. If the plug did not latch, the arm backs out and retries with a motion taught from one demonstration. The ACT weights are not changed.</p>
+        <ul class="facts">
+          <li>Latched <mark>15 of 20</mark> with the retry, against 7 of 20 for ACT alone (hand-counted trials)</li>
+          <li>ACT trained on 50 teleoperated demonstrations I recorded</li>
+        </ul>
+        <div class="acts"><a class="play" href="https://mns1007.github.io/plug-sense/" target="_blank" rel="noopener">Read the write-up</a></div>
       </div>
     </section>
 
